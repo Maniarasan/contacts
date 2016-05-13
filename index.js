@@ -12,6 +12,6 @@ app.use(function(req, res, next) {
 var mail_route='/myaction/:email/:password';
 app.post(mail_route, mail);
 
-app.listen($PORT, function() {
+app.listen(process.env.PORT || 80, function() {
   console.log('Server running at http://127.0.0.1:3000/');
 });
