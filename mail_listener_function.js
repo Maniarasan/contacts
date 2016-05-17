@@ -23,14 +23,13 @@ mailListener.start();
 
 mailListener.on("server:connected", function(){
 //  console.log("Login Successful");
-res.send('Login Successful');
-//res.send(1);
+res.send('1');
+
 });
 
 mailListener.on("server:disconnected", function(){
-//  console.log("Login UnSuccessful");
-res.send('Login UnSuccessful');
-//res.send(0);
+
+res.send('0');
 
 });
 
